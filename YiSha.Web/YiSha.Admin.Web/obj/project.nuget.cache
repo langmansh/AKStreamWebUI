@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ax+Ga+1L9uUHkXHVnR2nuk2RCLGpseGk7N0j94L4z+RoHJnCyZE+3Z/hx9YVPIHvnhKCep4pZdY9BwaX9oFRPw==",
+  "dgSpecHash": "zfZCsC6gAFz61baMptqPNirzxHqbVxpYaDuNbgY9iq1e1PNmoSbCImF2wSXyuoB0WuwCOD7I559WSYQxm9yVeA==",
   "success": true,
-  "projectFilePath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Web\\YiSha.Admin.Web\\YiSha.Admin.Web.csproj",
+  "projectFilePath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Web\\YiSha.Admin.Web\\YiSha.Admin.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\buildbundlerminifier\\3.2.435\\buildbundlerminifier.3.2.435.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.0\\microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",

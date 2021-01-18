@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj": {}
+    "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj": {}
   },
   "projects": {
-    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj": {
+    "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj",
+        "projectUniqueName": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj",
         "projectName": "YiSha.Data.EF",
-        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj",
+        "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\obj\\",
+        "outputPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj": {
-                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj"
+              "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj": {
+                "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj"
               },
-              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
-                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj"
+              "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
+                "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj": {
+    "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj",
+        "projectUniqueName": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj",
         "projectName": "YiSha.Data",
-        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj",
+        "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\obj\\",
+        "outputPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -112,8 +112,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
-                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj"
+              "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
+                "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj"
               }
             }
           }
@@ -163,14 +163,14 @@
         }
       }
     },
-    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj": {
+    "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj",
+        "projectUniqueName": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj",
         "projectName": "YiSha.Enum",
-        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj",
+        "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\obj\\",
+        "outputPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -220,14 +220,14 @@
         }
       }
     },
-    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
+    "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj",
+        "projectUniqueName": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj",
         "projectName": "YiSha.Util",
-        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj",
+        "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\obj\\",
+        "outputPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -247,8 +247,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj": {
-                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj"
+              "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj": {
+                "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj"
               }
             }
           }

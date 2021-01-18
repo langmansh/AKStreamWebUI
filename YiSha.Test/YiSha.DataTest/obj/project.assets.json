@@ -7387,11 +7387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Test\\YiSha.DataTest\\YiSha.DataTest.csproj",
+      "projectUniqueName": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Test\\YiSha.DataTest\\YiSha.DataTest.csproj",
       "projectName": "YiSha.DataTest",
-      "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Test\\YiSha.DataTest\\YiSha.DataTest.csproj",
+      "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Test\\YiSha.DataTest\\YiSha.DataTest.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Test\\YiSha.DataTest\\obj\\",
+      "outputPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Test\\YiSha.DataTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7411,20 +7411,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Business\\YiSha.Service\\YiSha.Service.csproj": {
-              "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Business\\YiSha.Service\\YiSha.Service.csproj"
+            "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Business\\YiSha.Service\\YiSha.Service.csproj": {
+              "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Business\\YiSha.Service\\YiSha.Service.csproj"
             },
-            "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj": {
-              "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj"
+            "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj": {
+              "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.EF\\YiSha.Data.EF.csproj"
             },
-            "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.Repository\\YiSha.Data.Repository.csproj": {
-              "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.Repository\\YiSha.Data.Repository.csproj"
+            "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.Repository\\YiSha.Data.Repository.csproj": {
+              "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data.Repository\\YiSha.Data.Repository.csproj"
             },
-            "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj": {
-              "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj"
+            "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj": {
+              "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Data\\YiSha.Data\\YiSha.Data.csproj"
             },
-            "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Model\\YiSha.Model.csproj": {
-              "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Model\\YiSha.Model.csproj"
+            "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Model\\YiSha.Model.csproj": {
+              "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Entity\\YiSha.Model\\YiSha.Model.csproj"
             }
           }
         }

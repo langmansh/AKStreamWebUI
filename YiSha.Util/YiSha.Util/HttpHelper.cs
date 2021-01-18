@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using YiSha.Util.Extension;
 
 namespace YiSha.Util
@@ -102,6 +107,20 @@ namespace YiSha.Util
                 string err = ex.Message;
                 return string.Empty;
             }
+        }
+        /// <summary>
+        /// post 请求
+        /// </summary>
+        /// <param name="url">请求地址</param>
+        /// <param name="jsonData">请求参数</param>
+        /// <returns></returns>
+        public static Task<string> Post(string url, string jsonData)
+        {
+            HttpClient httpClient = CreateHttpClient(url);
+            var postData = new StringContent(jsonData);
+            postData.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+            Task<string> result = httpClient.PostAsync(url, postData).Result.Content.ReadAsStringAsync();
+            return result;
         }
 
         /// <summary>
@@ -436,6 +455,35 @@ namespace YiSha.Util
         #endregion
 
         #region 普通类型
+        /// <summary>
+        /// 创建HttpClient
+        /// </summary>
+        /// <returns></returns>
+        public static HttpClient CreateHttpClient(string url, IDictionary<string, string> cookies = null)
+        {
+            HttpClient httpclient;
+            HttpClientHandler handler = new HttpClientHandler();
+            var uri = new Uri(url);
+            if (cookies != null)
+            {
+                foreach (var key in cookies.Keys)
+                {
+                    string one = key + "=" + cookies[key];
+                    handler.CookieContainer.SetCookies(uri, one);
+                }
+            }
+            //如果是发送HTTPS请求  
+            if (url.StartsWith("https", StringComparison.OrdinalIgnoreCase))
+            {
+                ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
+                httpclient = new HttpClient(handler);
+            }
+            else
+            {
+                httpclient = new HttpClient(handler);
+            }
+            return httpclient;
+        }
         /// <summary>    
         /// 传入一个正确或不正确的URl，返回正确的URL
         /// </summary>    
@@ -462,6 +510,7 @@ namespace YiSha.Util
             //调用专门读取数据的类
             return GetHttpRequestData(httpItem);
         }
+
         #endregion
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Swi2OYhgKn0D0RBeFoCUiMGt26FD7me4HaaPl04fGAW+UhJK5v+zghX+VPDl+GsPaEq9BcvBWhcgLv6dgKGR6A==",
+  "dgSpecHash": "+kvLF7Jqt0KS3/21DlvfF/Ztt0vomzQjuEMP4BGFQS41dbNxEU8QCb9Mjg2VmqdOyG9r35PVTSn9QEm6q3SaPg==",
   "success": true,
-  "projectFilePath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
+  "projectFilePath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,328 @@
+2021-01-19 10:06:57.3378||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 10:27:39.4422||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 10:31:13.0467||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 10:33:16.5682||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 10:36:30.9579||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 10:53:06.4966||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 10:55:31.1783||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 11:05:34.7886||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 11:06:34.0005||ERROR||Object reference not set to an instance of an object.
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.CameraSessionManagerController.CameraSessionList(CameraSessionManagerParam param, Pagination pagination) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\CameraSessionManagerController.cs:line 70
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/CameraSessionManager/CameraSessionList|action: CameraSessionList
+2021-01-19 11:07:59.4631||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 11:11:40.6787||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 15:03:09.2271||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 15:03:24.9093||ERROR||Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[YiSha.Admin.Web.Model.OnlineDeviceModel]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'videoChannelMediaInfo', line 1, position 25.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.CameraSessionManagerController.CameraSessionList(CameraSessionManagerParam param, Pagination pagination) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\CameraSessionManagerController.cs:line 66
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/CameraSessionManager/CameraSessionList|action: CameraSessionList
+2021-01-19 15:03:35.8617||ERROR||Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[YiSha.Admin.Web.Model.OnlineDeviceModel]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'videoChannelMediaInfo', line 1, position 25.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.CameraSessionManagerController.CameraSessionList(CameraSessionManagerParam param, Pagination pagination) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\CameraSessionManagerController.cs:line 66
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/CameraSessionManager/CameraSessionList|action: CameraSessionList
+2021-01-19 15:07:49.9565||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 15:10:03.9070||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 15:12:28.5867||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:13:08.8638||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:13:19.2402||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:14:08.6321||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:14:51.7375||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:20:40.8007||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 15:23:05.5837||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:28:50.9865||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:29:11.2269||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:30:56.0534||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:31:38.6995||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:31:48.4454||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:32:30.1256||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:33:12.5602||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:33:26.9480||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:34:34.8301||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 15:38:12.7672||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:01:24.4269||DEBUG||程序启动 |ContentRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2021-01-19 16:04:04.5768||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:06:23.8523||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:07:44.5553||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:08:40.2748||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:09:09.1666||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:09:38.8299||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:16:59.8254||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 232
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2021-01-19 16:17:46.4352||ERROR||'GBK' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 242
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\HttpHelper.cs:line 511
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson

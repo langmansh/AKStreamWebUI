@@ -44,6 +44,22 @@
         return '';
     }
 
+    function getDataDictKey(dictType, dictValue) {
+        if (dataDict[dictType]) {
+            for (var i = 0; i < dataDict[dictType].length; i++) {
+                if (dataDict[dictType][i].DictValue == dictValue) {
+                    if (dataDict[dictType][i].ListClass) {
+                        return '<span class="badge badge-' + dataDict[dictType][i].ListClass + '">' + dataDict[dictType][i].DictKey + '</span>';
+                    }
+                    else {
+                        return dataDict[dictType][i].DictKey;
+                    }
+                }
+            }
+        }
+        return '';
+    }
+
     function initDataAuthority() {
         ys.ajax({
             url: ctx + 'OrganizationManage/User/GetUserAuthorizeJson',
@@ -93,6 +109,7 @@
     window.initDataDict = initDataDict;
     window.getDataDict = getDataDict;
     window.getDataDictValue = getDataDictValue;
+    window.getDataDictKey = getDataDictKey;
 
     window.getButtonAuthority = getButtonAuthority;
 })(window);

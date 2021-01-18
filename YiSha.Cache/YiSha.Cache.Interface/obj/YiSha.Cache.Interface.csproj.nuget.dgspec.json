@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {}
+    "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {}
   },
   "projects": {
-    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {
+    "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
+        "projectUniqueName": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
         "projectName": "YiSha.Cache.Interface",
-        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
+        "projectPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\obj\\",
+        "outputPath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

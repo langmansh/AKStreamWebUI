@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QhiKY8G72bZVND8hksjMuElhr4n32bwntwhL5tPOVRxVRkwNmva4s2PBZgNaMOHFlhBV7YC2OEHbylm7wMwe8A==",
+  "dgSpecHash": "Xu/nWhyj1vwwP4eiD0NhMYzDClSku3OeWjQhndEOr61IAYcVpTUBnX9bqodVgtOIrRjf0AbTOsRbQKFIZH5Gpg==",
   "success": true,
-  "projectFilePath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.CodeGenerator\\YiSha.CodeGenerator.csproj",
+  "projectFilePath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Util\\YiSha.CodeGenerator\\YiSha.CodeGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.0\\microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.0.nupkg.sha512",

@@ -11,8 +11,10 @@
             </div>
         </div>
         <div class="btn-group-sm hidden-xs" id="toolbar">
-            <a id="btnRestart" class="btn btn-success" onclick="RestartMedia()"><i class="fa fa-plus"></i> 重启流媒体</a>
-            <a id="btnClose" class="btn btn-primary" onclick="CloseMedia()"><i class="fa fa-edit"></i> 关闭流媒体</a>
+            <a id="btnStart" class="btn btn-success" onclick="StartMedia()"><i class="fa fa-plus"></i> 启动服务</a>
+            <a id="btnRestart" class="btn btn-success" onclick="RestartMedia()"><i class="fa fa-plus"></i> 重启服务</a>
+            <a id="btnClose" class="btn btn-primary" onclick="CloseMedia()"><i class="fa fa-edit"></i> 停止服务</a>
+            <a id="btnReload" class="btn btn-primary" onclick="ReloadMedia()"><i class="fa fa-edit"></i> 配置热加载</a>
         </div>
         <div class="col-sm-12 select-table table-striped">
             <table id="gridTable" data-mobile-responsive="true"></table>
@@ -31,29 +33,31 @@
             url: queryUrl,
             columns: [
                 { checkbox: true, visible: true },
-                { field: 'mediaServerId', title: '流媒体服务ID' },
-                { field: 'ipaddress', title: 'IP地址' },
+                { field: 'mediaServerId', title: '流媒体ID' },
+                { field: 'ipV4Address', title: 'ipV4' },
+                { field: 'ipV6Address', title: 'ipV6' },
+                { field: 'httpPort', title: 'http端口' },
                 {
-                    field: 'isRunning', title: '运行状态', formatter: function (value, row, index) {
+                    field: 'isKeeperRunning', title: 'keeper服务', formatter: function (value, row, index) {
                         if (value == true) {
                             return '<span class="badge badge-primary">' + "运行" + '</span>';
                         } else {
-                            return '<span class="badge badge-error">' + "停止" + '</span>';
+                            return '<span class="badge badge-error">' + "异常" + '</span>';
                         }
                     }
                 },
+                { field: 'keeperPort', title: 'keeper端口' },
                 {
-                    field: 'health', title: '心跳状态', formatter: function (value, row, index) {
+                    field: 'isMediaServerRunning', title: 'zlm服务', formatter: function (value, row, index) {
                         if (value == true) {
-                            return '<span class="badge badge-primary">' + "正常" + '</span>';
+                            return '<span class="badge badge-primary">' + "运行" + '</span>';
                         } else {
                             return '<span class="badge badge-error">' + "异常" + '</span>';
                         }
                     }
                 },
 
-                { field: 'recordFilePath', title: '录像路径' },
-                { field: 'keepAlive', title: '心跳时间' },
+                { field: 'secret', title: '密钥' },
             ],
             queryParams: function (params) {
                 var pagination = $('#gridTable').ysTable('getPagination', params);
@@ -67,42 +71,77 @@
         $('#gridTable').ysTable('search');
         resetToolbarStatus();
     }
-
-    //重启流媒体服务
+    //启动服务
+    function StartMedia() {
+        var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+        if (ys.checkRowEdit(selectedRow)) {
+            var mediaServerId = selectedRow[0]["mediaServerId"];
+            ys.ajax({
+                url: '@GlobalContext.SystemConfig.MediaServerUrl + /AKStreamKeeper/StartMediaServer?mediaServerId=' + mediaServerId,
+                type: "get",
+                success: function (obj) {
+                    if (obj && obj.isRunning) {
+                        ys.msgSuccess("流媒体启动成功");
+                    }
+                    else {
+                        ys.msgError("流媒体启动失败");
+                    }
+                }
+            });
+        }
+    }
+    //重启服务
     function RestartMedia() {
         var selectedRow = $('#gridTable').bootstrapTable('getSelections');
         if (ys.checkRowEdit(selectedRow)) {
             var mediaServerId = selectedRow[0]["mediaServerId"];
                      ys.ajax({
-                        url:  'http://11.11.201.22:5800/MediaServer/RestartMediaServer?mediaServerId=' + mediaServerId,
+                         url:  '@GlobalContext.SystemConfig.MediaServerUrl + /AKStreamKeeper/RestartMediaServer?mediaServerId=' + mediaServerId,
                         type: "get",
                         success: function (obj) {
-                            if (obj) {
-                                ys.msgSuccess("重启流媒体服务成功！");
+                            if (obj && obj.isRunning) {
+                                ys.msgSuccess("重启流媒体服务成功");
                             }
                             else {
-                                ys.msgError("重启流媒体服务失败！");
+                                ys.msgError("重启流媒体服务失败");
                             }
                         }
                     });
         }
     }
-
-
-    //关闭流媒体服务
+    //停止服务
     function CloseMedia() {
         var selectedRow = $('#gridTable').bootstrapTable('getSelections');
         if (ys.checkRowEdit(selectedRow)) {
             var mediaServerId = selectedRow[0]["mediaServerId"];
             ys.ajax({
-                url: 'http://11.11.201.22:5800/MediaServer/StopMediaServer?mediaServerId=' + mediaServerId,
+                url:  '@GlobalContext.SystemConfig.MediaServerUrl + /AKStreamKeeper/ShutdownMediaServer?mediaServerId=' + mediaServerId,
                 type: "get",
                 success: function (obj) {
                     if (obj) {
-                        ys.msgSuccess("流媒体服务关闭成功！");
+                        ys.msgSuccess("流媒体停止成功");
                     }
                     else {
-                        ys.msgError("流媒体服务关闭失败！");
+                        ys.msgError("流媒体停止失败");
+                    }
+                }
+            });
+        }
+    }
+    //热加载
+    function ReloadMedia() {
+        var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+        if (ys.checkRowEdit(selectedRow)) {
+            var mediaServerId = selectedRow[0]["mediaServerId"];
+            ys.ajax({
+                url:  '@GlobalContext.SystemConfig.MediaServerUrl + /AKStreamKeeper/ReloadMediaServer?mediaServerId=' + mediaServerId,
+                type: "get",
+                success: function (obj) {
+                    if (obj) {
+                        ys.msgSuccess("配置加载成功");
+                    }
+                    else {
+                        ys.msgError("配置加载失败");
                     }
                 }
             });

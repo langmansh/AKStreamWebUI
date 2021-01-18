@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RlyQTuRDrD0t69MM8Qso3QazhKzX12De8bdWyvGyKoTZYyCuDB0dm+aZlfzQ5PxLP1TppccbVFz+p6u+0QyQYw==",
+  "dgSpecHash": "Q+r0KxRmH2NrNLtCK8zUGvkkxvGipC6vj4opJhu4D8liIVBO1xG44xsxPx4SzOlJsIXnN0+EDpJAxNwauAKbrQ==",
   "success": true,
-  "projectFilePath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Business\\YiSha.Business.Cache\\YiSha.Business.Cache.csproj",
+  "projectFilePath": "E:\\源码\\AKStreamWebUI\\AKStreamWebUI\\YiSha.Business\\YiSha.Business.Cache\\YiSha.Business.Cache.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.0\\microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.0.nupkg.sha512",

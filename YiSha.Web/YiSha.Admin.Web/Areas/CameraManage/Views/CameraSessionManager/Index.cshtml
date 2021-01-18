@@ -6,15 +6,7 @@
         <div id="searchDiv" class="col-sm-12 search-collapse">
             <div class="select-list">
                 <ul>
-                    <li>
-                        流媒体服务：<span id="mediaserverId" col="mediaServerId"></span>
-                    </li>
-                    <li>
-                        台账ID：<input id="spjkTZID" col="SpjkTZID" type="text" />
-                    </li>
-                    <li>
-                        <a id="btnSearch" class="btn btn-primary btn-sm" onclick="searchGrid()"><i class="fa fa-search"></i>&nbsp;搜索</a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -39,46 +31,106 @@
 
     });
 
+    function btn_playUrl(id) {
+        //播放地址
+    }
+
+    function btn_playList(id) {
+        //播放者客户端列表
+    }
+
     function initGrid() {
         var queryUrl = '@Url.Content("~/CameraManage/CameraSessionManager/CameraSessionList")';
         $('#gridTable').ysTable({
             url: queryUrl,
             columns: [
                 { checkbox: false, visible: false },
-                { field: 'cameraId', title: '设备ID' },
-                { field: 'spjkTZID', title: '台账ID' },
-                { field: 'cameraIpAddress', title: '设备IP' },
-                { field: 'cameraName', title: '设备名称' },
-                { field: 'cameraType', title: '设备类型' },
-                { field: 'clientType', title: '客户端类型' },
-                { field: 'mediaServerId', title: '流媒体ID' },
+                { field: 'mainId', title: '设备ID' },
+                { field: 'mediaServerId', title: '流媒体服务' },
+                { field: 'channelId', title: 'Channel ID' },
+                { field: 'deviceId', title: 'Device ID' },
+                { field: 'channelName', title: '设备名称' },
+                { field: 'ipV4Address', title: 'IpV4' },
+                { field: 'ipV6Address', title: 'IpV6' },
                 {
-                    field: 'isOnline', title: '在线状态', formatter: function (value, row, index) {
-                        if (value == true) {
-                            return '<span class="badge badge-primary">' + "在线" + '</span>';
-                        } else {
-                            return '<span class="badge badge-error">' + "离线" + '</span>';
+                    field: 'deviceNetworkType', title: '网络类型', formatter: function (value, row, index) {
+                        return top.getDataDictKey('DeviceNetworkType', value);
+                    }
+                },
+                {
+                    field: 'deviceStreamType', title: '流类型', formatter: function (value, row, index) {
+                        return top.getDataDictValue('DeviceStreamType', value);
+                    }
+                },
+                {
+                    field: 'methodByGetStream', title: '拉流方式', formatter: function (value, row, index) {
+                        return top.getDataDictValue('MethodByGetStream', value);
+                    }
+                },
+                {
+                    field: 'methodByGetStream', title: '拉流方式', formatter: function (value, row, index) {
+                        return top.getDataDictValue('MethodByGetStream', value);
+                    }
+                },
+                {
+                    field: 'tlxy', title: '推流协议', formatter: function (value, row, index) {
+                        if (!!row.mediaServerStreamInfo) {
+                            return row.mediaServerStreamInfo.pushSocketType;
                         }
                     }
                 },
                 {
-                    field: 'isRecord', title: '录制状态', formatter: function (value, row, index) {
+                    field: 'AutoVideo', title: '自动推拉流', formatter: function (value, row, index) {
                         if (value == true) {
-                            return '<span class="badge badge-primary">' + "开启" + '</span>';
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
                         } else {
-                            return '<span class="badge badge-error">' + "关闭" + '</span>';
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
                         }
                     }
                 },
-                { field: 'playUrl', title: '播放地址' },
-                { field: 'upTime', title: '在线时长（秒）' },
-                { field: 'onlineTime', title: '上线时间' },
                 {
-                    field: 'z', title: '所属厂商', formatter: function (value, row, index) {
-                        if (!!row.cameraEx) {
-                            return row.cameraEx.camera.manufacturer;
+                    field: 'AutoRecord', title: '自动录像', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
                         }
-                        return "";
+                    }
+                },
+                {
+                    field: 'hasPtz', title: '云台控制', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'rtpWithTcp', title: 'TCP推流', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'defaultRtpPort', title: '默认端口', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'cz', title: '操作', formatter: function (value, row, index) {
+                        if (!!row.mediaServerStreamInfo) {
+                            var actions = [];
+                            actions.push('<div style="display: flex;"><a class="btn btn-info btn-xs"  href="#" onclick="btn_playUrl(\'' + row.id + '\')">播放地址</a><a class="btn btn-info btn-xs" style="margin-left: 5px;" href="#" onclick="btn_playList(\'' + row.id + '\')">在线客户端</a></div>');
+                            return actions.join('');
+                        }
                     }
                 },
             ],

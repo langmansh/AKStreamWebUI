@@ -12,3 +12,17 @@ E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\Yi
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.csproj.CopyComplete
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.dll
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\bin\Debug\netcoreapp3.1\YiSha.Data.deps.json
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\bin\Debug\netcoreapp3.1\YiSha.Data.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\bin\Debug\netcoreapp3.1\YiSha.Data.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\bin\Debug\netcoreapp3.1\YiSha.Enum.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\bin\Debug\netcoreapp3.1\YiSha.Util.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\bin\Debug\netcoreapp3.1\YiSha.Util.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\bin\Debug\netcoreapp3.1\YiSha.Enum.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.csprojAssemblyReference.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.AssemblyInfoInputs.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.AssemblyInfo.cs
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.csproj.CoreCompileInputs.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.csproj.CopyComplete
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Data\YiSha.Data\obj\Debug\netcoreapp3.1\YiSha.Data.pdb

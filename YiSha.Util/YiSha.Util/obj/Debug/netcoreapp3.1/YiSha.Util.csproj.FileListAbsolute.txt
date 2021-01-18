@@ -10,3 +10,15 @@ E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\Yi
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.csproj.CopyComplete
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.dll
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\bin\Debug\netcoreapp3.1\YiSha.Util.deps.json
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\bin\Debug\netcoreapp3.1\YiSha.Util.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\bin\Debug\netcoreapp3.1\YiSha.Util.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\bin\Debug\netcoreapp3.1\YiSha.Enum.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\bin\Debug\netcoreapp3.1\YiSha.Enum.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.csprojAssemblyReference.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.AssemblyInfoInputs.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.AssemblyInfo.cs
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.csproj.CoreCompileInputs.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.csproj.CopyComplete
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Util\YiSha.Util\obj\Debug\netcoreapp3.1\YiSha.Util.pdb

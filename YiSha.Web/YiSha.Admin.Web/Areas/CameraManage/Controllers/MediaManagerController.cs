@@ -13,6 +13,7 @@ using YiSha.Entity.CameraManage;
 using YiSha.Business.CameraManage;
 using YiSha.Model.Param.CameraManage;
 using Newtonsoft.Json;
+using YiSha.Admin.Web.Model;
 
 namespace YiSha.Admin.Web.Areas.CameraManage.Controllers
 {
@@ -42,9 +43,9 @@ namespace YiSha.Admin.Web.Areas.CameraManage.Controllers
         [HttpGet]
         public async Task<ActionResult> MediaServerList(MediaManagerParam param, Pagination pagination)
         {
-            TData<List<MediaObject>> obj = new TData<List<MediaObject>>();
-            string result = HttpHelper.HttpGet(GlobalContext.SystemConfig.MediaServerUrl + "/System/GetMediaServerList");
-            var medialist = JsonConvert.DeserializeObject<List<MediaObject>>(result);
+            TData<List<MediaServerModel>> obj = new TData<List<MediaServerModel>>();
+            string result = HttpHelper.HttpGet(GlobalContext.SystemConfig.MediaServerUrl + "/MediaServer/GetMediaServerList");
+            var medialist = JsonConvert.DeserializeObject<List<MediaServerModel>>(result);
 
             obj.Data = medialist;
             obj.Tag = 1;
