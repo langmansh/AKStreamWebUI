@@ -1,0 +1,626 @@
+2020-12-22 10:18:51.7521||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 10:18:59.0895||ERROR||Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 344
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 272
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-22 10:19:10.5499||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 10:20:03.8127||ERROR||Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 344
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 272
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-22 10:20:15.0973||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 10:20:26.0276||ERROR||Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 344
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 272
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-22 10:20:37.2647||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 10:21:43.7776||ERROR||Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 344
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 272
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-22 10:21:54.9767||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 10:25:25.2839||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 10:25:30.3445||ERROR||Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 344
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 272
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-22 10:25:41.8602||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 10:25:51.0946||ERROR||Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 344
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 272
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-22 10:26:02.4822||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 10:26:49.7494||ERROR||Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 272
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](IQueryable`1 tempData, String sort, Boolean isAsc, Int32 pageSize, Int32 pageIndex) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 358
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition, String sort, Boolean isAsc, Int32 pageSize, Int32 pageIndex) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 325
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 163
+   at YiSha.Service.SystemManage.DataDictDetailService.GetPageList(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 28
+   at YiSha.Business.SystemManage.DataDictDetailBLL.GetPageList(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictDetailBLL.cs:line 34
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictDetailController.GetPageListJson(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictDetailController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDictDetail/GetPageListJson|action: GetPageListJson
+2020-12-22 11:01:00.2627||WARN||耗时的Sql：SELECT `s`.`Id`, `s`.`BaseCreateTime`, `s`.`BaseCreatorId`, `s`.`BaseIsDelete`, `s`.`BaseModifierId`, `s`.`BaseModifyTime`, `s`.`BaseVersion`, `s`.`DepartmentName`, `s`.`DepartmentSort`, `s`.`Email`, `s`.`Fax`, `s`.`ParentId`, `s`.`PrincipalId`, `s`.`Remark`, `s`.`Telephone`
+FROM `SysDepartment` AS `s` |url: http://localhost/OrganizationManage/Department/GetDepartmentTreeListJson|action: GetDepartmentTreeListJson
+2020-12-22 12:57:11.2761||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 12:57:27.4374||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 12:59:08.1499||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 12:59:52.8410||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:09:18.0431||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 13:09:29.1760||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToUInt32(String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:09:33.5619||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:09:40.5810||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToUInt32(String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:09:53.3511||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToUInt32(String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:09:57.1880||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToUInt32(String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:10:23.7280||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToUInt32(String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:10:45.0263||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToUInt32(String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:10:50.9350||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseUInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToUInt32(String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:12:12.6213||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 13:12:28.3166||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:12:37.7925||ERROR||Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt64(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Int64.Parse(String s)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\SipDeviceManagerController.cs:line 59
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceList|action: SipDeviceList
+2020-12-22 13:14:07.9565||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:22:00.4699||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 13:22:16.7763||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:45:10.2154||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 13:46:33.5949||ERROR||Object reference not set to an instance of an object.
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceDetailList(SipDeviceManagerParam param)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceDetailList|action: SipDeviceDetailList
+2020-12-22 13:46:34.6409||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:48:58.3823||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:50:13.5957||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 13:53:24.5056||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:03:58.6612||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 14:04:14.4516||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:06:56.3340||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 14:07:12.4770||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:08:33.3042||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 14:08:49.5402||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:10:52.4247||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 14:11:23.3496||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 14:11:39.5758||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:14:08.5177||ERROR||Object reference not set to an instance of an object.
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.SipDeviceManagerController.SipDeviceDetailList(SipDeviceManagerParam param)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/SipDeviceManager/SipDeviceDetailList|action: SipDeviceDetailList
+2020-12-22 14:14:45.0747||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:17:11.0159||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:17:28.8440||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:17:46.7565||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:18:00.6808||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:18:20.5670||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 14:47:15.3188||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 15:06:58.8315||ERROR||The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at YiSha.Util.HttpHelper.HttpGet(String url, Int32 timeout) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 48
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.STD_Stream_CameraController.GetPushMediaList()
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/STD_Stream_Camera/GetPushMediaList|action: GetPushMediaList
+2020-12-22 15:07:33.3442||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 15:10:19.2431||ERROR||Maximum number of retries (6) exceeded while executing database operations with 'MySqlRetryingExecutionStrategy'. See inner exception for the most recent failure.
+Cannot access a disposed object.
+Object name: 'System.Net.Sockets.Socket'.
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.SqlQueryExtension.SqlQuery[T](DbContext db, String sql, Object[] parameters) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\SqlQueryExtension.cs:line 18
+   at YiSha.Data.EF.MySqlDatabase.FindObject[T](String strSql) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 420
+   at YiSha.Data.Repository.Repository.FindObject[T](String strSql) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 214
+   at YiSha.Web.Code.DataRepository.GetUserByToken(String token) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Web.Code\DataRepository.cs:line 36
+   at YiSha.Web.Code.Operator.Current(String apiToken) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Web.Code\Operator.cs:line 113
+   at YiSha.Admin.Web.Controllers.BaseController.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Controllers\BaseController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/|action: Index
+2020-12-22 20:20:39.3711||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-22 20:20:56.2521||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 20:23:19.0799||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 20:26:10.1668||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-22 20:26:54.7003||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson

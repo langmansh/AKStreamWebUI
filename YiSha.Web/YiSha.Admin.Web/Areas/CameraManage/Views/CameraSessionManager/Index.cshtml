@@ -1,0 +1,99 @@
+﻿@{
+    Layout = "~/Views/Shared/_Index.cshtml";
+ }
+<div class="container-div">
+    <div class="row">
+        <div id="searchDiv" class="col-sm-12 search-collapse">
+            <div class="select-list">
+                <ul>
+                    <li>
+                        流媒体服务：<span id="mediaserverId" col="mediaServerId"></span>
+                    </li>
+                    <li>
+                        台账ID：<input id="spjkTZID" col="SpjkTZID" type="text" />
+                    </li>
+                    <li>
+                        <a id="btnSearch" class="btn btn-primary btn-sm" onclick="searchGrid()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-group-sm hidden-xs" id="toolbar">
+
+        </div>
+        <div class="col-sm-12 select-table table-striped">
+            <table id="gridTable" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#mediaserverId").ysComboBox({
+            url: '@Url.Content("~/CameraManage/CameraSessionManager/GetPushMediaList")',
+            key: "mediaServerId",
+            value: "mediaServerId",
+            default: "vm_linux"
+        });
+        initGrid();
+
+    });
+
+    function initGrid() {
+        var queryUrl = '@Url.Content("~/CameraManage/CameraSessionManager/CameraSessionList")';
+        $('#gridTable').ysTable({
+            url: queryUrl,
+            columns: [
+                { checkbox: false, visible: false },
+                { field: 'cameraId', title: '设备ID' },
+                { field: 'spjkTZID', title: '台账ID' },
+                { field: 'cameraIpAddress', title: '设备IP' },
+                { field: 'cameraName', title: '设备名称' },
+                { field: 'cameraType', title: '设备类型' },
+                { field: 'clientType', title: '客户端类型' },
+                { field: 'mediaServerId', title: '流媒体ID' },
+                {
+                    field: 'isOnline', title: '在线状态', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "在线" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "离线" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'isRecord', title: '录制状态', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "开启" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "关闭" + '</span>';
+                        }
+                    }
+                },
+                { field: 'playUrl', title: '播放地址' },
+                { field: 'upTime', title: '在线时长（秒）' },
+                { field: 'onlineTime', title: '上线时间' },
+                {
+                    field: 'z', title: '所属厂商', formatter: function (value, row, index) {
+                        if (!!row.cameraEx) {
+                            return row.cameraEx.camera.manufacturer;
+                        }
+                        return "";
+                    }
+                },
+            ],
+            queryParams: function (params) {
+                var pagination = $('#gridTable').ysTable('getPagination', params);
+                var queryString = $('#searchDiv').getWebControls(pagination);
+                return queryString;
+            }
+        });
+    }
+
+    function searchGrid() {
+        $('#gridTable').ysTable('search');
+        resetToolbarStatus();
+    }
+
+
+</script>

@@ -1,0 +1,429 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Factory\\YiSha.Cache.Factory.csproj": {}
+  },
+  "projects": {
+    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Factory\\YiSha.Cache.Factory.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Factory\\YiSha.Cache.Factory.csproj",
+        "projectName": "YiSha.Cache.Factory",
+        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Factory\\YiSha.Cache.Factory.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Factory\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj"
+              },
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.MemoryCache\\YiSha.MemoryCache.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.MemoryCache\\YiSha.MemoryCache.csproj"
+              },
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.RedisCache\\YiSha.RedisCache.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.RedisCache\\YiSha.RedisCache.csproj"
+              },
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
+        "projectName": "YiSha.Cache.Interface",
+        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.MemoryCache\\YiSha.MemoryCache.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.MemoryCache\\YiSha.MemoryCache.csproj",
+        "projectName": "YiSha.MemoryCache",
+        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.MemoryCache\\YiSha.MemoryCache.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.MemoryCache\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj"
+              },
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.RedisCache\\YiSha.RedisCache.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.RedisCache\\YiSha.RedisCache.csproj",
+        "projectName": "YiSha.RedisCache",
+        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.RedisCache\\YiSha.RedisCache.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.RedisCache\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Cache\\YiSha.Cache.Interface\\YiSha.Cache.Interface.csproj"
+              },
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.0.600, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj",
+        "projectName": "YiSha.Enum",
+        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj",
+        "projectName": "YiSha.Util",
+        "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\YiSha.Util.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Util\\YiSha.Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj": {
+                "projectPath": "E:\\源码\\YiShaAdmin\\AKStreamWebUI\\YiSha.Entity\\YiSha.Enum\\YiSha.Enum.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.9.8, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.2, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

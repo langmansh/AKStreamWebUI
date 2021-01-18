@@ -1,0 +1,14 @@
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\bin\Debug\netcoreapp3.1\YiSha.IdGenerator.deps.json
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\bin\Debug\netcoreapp3.1\YiSha.IdGenerator.dll
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\bin\Debug\netcoreapp3.1\YiSha.IdGenerator.pdb
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\bin\Debug\netcoreapp3.1\YiSha.Enum.dll
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\bin\Debug\netcoreapp3.1\YiSha.Util.dll
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\bin\Debug\netcoreapp3.1\YiSha.Util.pdb
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\bin\Debug\netcoreapp3.1\YiSha.Enum.pdb
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\obj\Debug\netcoreapp3.1\YiSha.IdGenerator.csprojAssemblyReference.cache
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\obj\Debug\netcoreapp3.1\YiSha.IdGenerator.AssemblyInfoInputs.cache
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\obj\Debug\netcoreapp3.1\YiSha.IdGenerator.AssemblyInfo.cs
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\obj\Debug\netcoreapp3.1\YiSha.IdGenerator.csproj.CoreCompileInputs.cache
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\obj\Debug\netcoreapp3.1\YiSha.IdGenerator.csproj.CopyComplete
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\obj\Debug\netcoreapp3.1\YiSha.IdGenerator.dll
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.IdGenerator\obj\Debug\netcoreapp3.1\YiSha.IdGenerator.pdb

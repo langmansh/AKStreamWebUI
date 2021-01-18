@@ -1,0 +1,245 @@
+﻿@{
+    Layout = "~/Views/Shared/_FormWhite.cshtml";
+}
+
+<div class="wrapper animated fadeInRight">
+    <form id="form" class="form-horizontal m">
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">设备ID<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="mainId" col="MainId" type="text" class="form-control" disabled />
+            </div>
+            <label class="col-sm-2 control-label ">通道名称<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="channelName" col="ChannelName" type="text" class="form-control" />
+            </div>   
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">部门代码</label>
+            <div class="col-sm-4">
+                <input id="departmentId" col="DepartmentId" type="text" class="form-control" />
+            </div>
+            <label class="col-sm-2 control-label ">部门名称</label>
+            <div class="col-sm-4">
+                <input id="departmentName" col="DepartmentName" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">上级部门代码</label>
+            <div class="col-sm-4">
+                <input id="pDepartmentId" col="PDepartmentId" type="text" class="form-control" />
+            </div>
+            <label class="col-sm-2 control-label ">上级部门名称</label>
+            <div class="col-sm-4">
+                <input id="pDepartmentName" col="PDepartmentName" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">拉取非rtp设备的流<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="methodByGetStream" col="MethodByGetStream"></div>
+            </div>
+            <label class="col-sm-2 control-label ">自动启用录制计划<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="autoRecord" col="AutoRecord"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">IpV4地址<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="ipV4Address" col="IpV4Address" type="text" class="form-control" />
+            </div>
+            <label class="col-sm-2 control-label ">IpV6地址<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="ipV6Address" col="IpV6Address" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">Channel ID<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="channelId" col="ChannelId" type="text" class="form-control" />
+            </div>
+            <label class="col-sm-2 control-label ">Device ID<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="deviceId" col="DeviceId" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">Vhost<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="vhost" col="Vhost" type="text" class="form-control" />
+            </div>
+            <label class="col-sm-2 control-label ">App<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <input id="app" col="App" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">设备的流类型<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="deviceStreamType" col="DeviceStreamType"></div>
+            </div>
+            <label class="col-sm-2 control-label ">云台控制<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="hasPtz" col="HasPtz"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">设备的网络类型<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="deviceNetworkType" col="DeviceNetworkType"></div>
+            </div>
+            <label class="col-sm-2 control-label ">设备类型<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="videoDeviceType" col="VideoDeviceType"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">自动推拉流<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="autoVideo" col="AutoVideo"></div>
+            </div>
+            <label class="col-sm-2 control-label ">录制计划模板名称</label>
+            <div class="col-sm-4">
+                <input id="recordPlanName" col="RecordPlanName" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">流媒体服务<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="mediaServerId" col="MediaServerId"></div>
+            </div>
+            <label class="col-sm-2 control-label ">视频流源地址</label>
+            <div class="col-sm-4">
+                <input id="videoSrcUrl" col="VideoSrcUrl" type="text" class="form-control" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">启用TCP推流<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="rtpWithTcp" col="RtpWithTcp"></div>
+            </div>
+            <label class="col-sm-2 control-label ">使用默认端口<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="defaultRtpPort" col="DefaultRtpPort"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label ">无人自动断流<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="noPlayerBreak" col="NoPlayerBreak"></div>
+            </div>
+            <label class="col-sm-2 control-label ">是否启用<font class="red"> *</font></label>
+            <div class="col-sm-4">
+                <div id="enabled" col="Enabled"></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    var id = ys.request("id");
+    $(function () {
+        $("#autoRecord").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+        $("#hasPtz").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+        $("#autoVideo").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+        $("#rtpWithTcp").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+        $("#defaultRtpPort").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+        $("#noPlayerBreak").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+        $("#enabled").ysRadioBox({ data: ys.getJson(@Html.Raw(typeof(StatusEnum).EnumToDictionaryString())) });
+
+        $("#videoDeviceType").ysComboBox({
+            data: top.getDataDict("VideoDeviceType"),
+            key: "DictKey",
+            value: "DictValue",
+            class: "form-control"
+        });
+        $("#deviceStreamType").ysComboBox({
+            data: top.getDataDict("DeviceStreamType"),
+            key: "DictKey",
+            value: "DictValue",
+            class: "form-control"
+        });
+        $("#deviceNetworkType").ysComboBox({
+            data: top.getDataDict("DeviceNetworkType"),
+            key: "DictValue",
+            value: "DictKey",
+            class: "form-control"
+        });
+        $("#videoDeviceType").ysComboBox({
+            data: top.getDataDict("VideoDeviceType"),
+            key: "DictKey",
+            value: "DictValue",
+            class: "form-control"
+        });
+        $("#methodByGetStream").ysComboBox({
+            data: top.getDataDict("MethodByGetStream"),
+            key: "DictKey",
+            value: "DictValue",
+            class: "form-control"
+        });
+
+
+        $("#mediaServerId").ysComboBox({
+            url: '@Url.Content("~/CameraManage/VideoChannels/GetMediaList")',
+            key: "mediaServerId",
+            value: "mediaServerId",
+            class: "form-control"
+        });
+
+        getForm();
+
+        $('#form').validate({
+            rules: {
+                mainId: { required: true }
+            }
+        });
+    });
+
+    function getForm() {
+        if (id > 0) {
+            ys.ajax({
+                url: '@Url.Content("~/CameraManage/VideoChannels/GetFormJson")' + '?id=' + id,
+                type: 'get',
+                success: function (obj) {
+                    if (obj.Tag == 1) {
+                        obj.Data.AutoRecord = obj.Data.AutoRecord == true ? 1 : 0;
+                        obj.Data.HasPtz = obj.Data.HasPtz == true ? 1 : 0;
+                        obj.Data.AutoVideo = obj.Data.AutoVideo == true ? 1 : 0;
+                        obj.Data.RtpWithTcp = obj.Data.RtpWithTcp == true ? 1 : 0;
+                        obj.Data.DefaultRtpPort = obj.Data.DefaultRtpPort == true ? 1 : 0;
+                        obj.Data.NoPlayerBreak = obj.Data.NoPlayerBreak == true ? 1 : 0;
+                        obj.Data.Enabled = obj.Data.Enabled == true ? 1 : 0;
+                        $('#form').setWebControls(obj.Data);
+                    }
+                }
+            });
+        }
+        else {
+            var defaultData = {};
+            $('#form').setWebControls(defaultData);
+        }
+    }
+
+    function saveForm(index) {
+        if ($('#form').validate().form()) {
+            var postData = $('#form').getWebControls({ Id: id });
+            ys.ajax({
+                url: '@Url.Content("~/CameraManage/VideoChannels/SaveFormJson")',
+                type: 'post',
+                data: postData,
+                success: function (obj) {
+                    if (obj.Tag == 1) {
+                        ys.msgSuccess(obj.Message);
+                        parent.searchGrid();
+                        parent.layer.close(index);
+                    }
+                    else {
+                        ys.msgError(obj.Message);
+                    }
+                }
+            });
+        }
+    }
+</script>
+

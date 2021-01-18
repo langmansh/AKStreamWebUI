@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\YiSha.Util\YiSha.Util\YiSha.Util.csproj" />
+    <ProjectReference Include="..\YiSha.Data.EF\YiSha.Data.EF.csproj" />
+    <ProjectReference Include="..\YiSha.Data\YiSha.Data.csproj" />
+  </ItemGroup>
+
+</Project>

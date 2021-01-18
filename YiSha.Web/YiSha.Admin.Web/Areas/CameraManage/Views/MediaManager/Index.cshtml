@@ -1,0 +1,112 @@
+﻿@{
+    Layout = "~/Views/Shared/_Index.cshtml";
+ }
+<div class="container-div">
+    <div class="row">
+        <div id="searchDiv" class="col-sm-12 search-collapse">
+            <div class="select-list">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <div class="btn-group-sm hidden-xs" id="toolbar">
+            <a id="btnRestart" class="btn btn-success" onclick="RestartMedia()"><i class="fa fa-plus"></i> 重启流媒体</a>
+            <a id="btnClose" class="btn btn-primary" onclick="CloseMedia()"><i class="fa fa-edit"></i> 关闭流媒体</a>
+        </div>
+        <div class="col-sm-12 select-table table-striped">
+            <table id="gridTable" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        initGrid();
+    });
+
+    function initGrid() {
+        var queryUrl = '@Url.Content("~/CameraManage/MediaManager/MediaServerList")';
+        $('#gridTable').ysTable({
+            url: queryUrl,
+            columns: [
+                { checkbox: true, visible: true },
+                { field: 'mediaServerId', title: '流媒体服务ID' },
+                { field: 'ipaddress', title: 'IP地址' },
+                {
+                    field: 'isRunning', title: '运行状态', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "运行" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "停止" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'health', title: '心跳状态', formatter: function (value, row, index) {
+                        if (value == true) {
+                            return '<span class="badge badge-primary">' + "正常" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "异常" + '</span>';
+                        }
+                    }
+                },
+
+                { field: 'recordFilePath', title: '录像路径' },
+                { field: 'keepAlive', title: '心跳时间' },
+            ],
+            queryParams: function (params) {
+                var pagination = $('#gridTable').ysTable('getPagination', params);
+                var queryString = $('#searchDiv').getWebControls(pagination);
+                return queryString;
+            }
+        });
+    }
+
+    function searchGrid() {
+        $('#gridTable').ysTable('search');
+        resetToolbarStatus();
+    }
+
+    //重启流媒体服务
+    function RestartMedia() {
+        var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+        if (ys.checkRowEdit(selectedRow)) {
+            var mediaServerId = selectedRow[0]["mediaServerId"];
+                     ys.ajax({
+                        url:  'http://11.11.201.22:5800/MediaServer/RestartMediaServer?mediaServerId=' + mediaServerId,
+                        type: "get",
+                        success: function (obj) {
+                            if (obj) {
+                                ys.msgSuccess("重启流媒体服务成功！");
+                            }
+                            else {
+                                ys.msgError("重启流媒体服务失败！");
+                            }
+                        }
+                    });
+        }
+    }
+
+
+    //关闭流媒体服务
+    function CloseMedia() {
+        var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+        if (ys.checkRowEdit(selectedRow)) {
+            var mediaServerId = selectedRow[0]["mediaServerId"];
+            ys.ajax({
+                url: 'http://11.11.201.22:5800/MediaServer/StopMediaServer?mediaServerId=' + mediaServerId,
+                type: "get",
+                success: function (obj) {
+                    if (obj) {
+                        ys.msgSuccess("流媒体服务关闭成功！");
+                    }
+                    else {
+                        ys.msgError("流媒体服务关闭失败！");
+                    }
+                }
+            });
+        }
+    }
+
+</script>

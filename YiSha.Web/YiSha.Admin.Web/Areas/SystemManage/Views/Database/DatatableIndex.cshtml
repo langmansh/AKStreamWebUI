@@ -1,0 +1,105 @@
+﻿@{
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+@section header{
+
+}
+<div class="container-div">
+    <div class="row">
+        <div id="searchDiv" class="col-sm-12 search-collapse">
+            <div class="select-list">
+                <ul>
+                    <li>
+                        表名称：<input id="tableName" col="TableName" type="text" />
+                    </li>
+                    <li>
+                        <a id="btnSearch" class="btn btn-primary btn-sm" onclick="searchGrid()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-group-sm" id="toolbar">
+            <a id="btnSync" class="btn btn-primary" onclick="syncDatabase()"><i class="fa fa-edit"></i> 同步</a>
+        </div>
+
+        <div class="col-sm-12 select-table table-striped">
+            <table id="gridTable" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        initGrid();
+    });
+
+    function initGrid() {
+        var queryUrl = '@Url.Content("~/SystemManage/Database/GetTablePageListJson")';
+        $('#gridTable').ysTable({
+            url: queryUrl,
+            detailView: true,
+            sortName: 'TableName',
+            sortOrder: "Asc",
+            columns: [
+                { checkbox: true, visible: true },
+                { field: 'Id', title: 'Id', visible: false },
+                { field: 'TableName', title: '表名称', sortable: true },
+                { field: 'TableKeyName', title: '主键名称' },
+                { field: 'TableKey', title: '主键字段' },
+                { field: 'TableCount', title: '记录数' },
+                { field: 'Remark', title: '备注' }
+            ],
+            queryParams: function (params) {
+                var pagination = $('#gridTable').ysTable('getPagination', params);
+                var queryString = $("#searchDiv").getWebControls(pagination);
+                return queryString;
+            },
+            onExpandRow: function (index, row, $detail) {
+                initChildGrid(index, row, $detail);
+            }
+        });
+    }
+
+    function initChildGrid(index, row, $detail) {
+        var queryUrl = '@Url.Content("~/SystemManage/Database/GetTableFieldListJson")' + '?tableName=' + row.TableName;
+        var cur_table = $detail.html('<div style="border:1px solid #666666"><table></table></div>').find('table');
+        $detail.css("padding-left", "28px");
+        $(cur_table).ysTable({
+            url: queryUrl,
+            toolbar: '',
+            pagination: false,
+            showColumns: false,
+            showRefresh: false,
+            showToggle: false,
+            showToolbar: false,
+            columns: [
+                { field: 'TableColumn', title: '列名', width: 180 },
+                { field: 'Datatype', title: '数据类型', width: 180 },
+                { field: 'FieldLength', title: '长度', width: 180 },
+                { field: 'Remark', title: '说明' }
+            ]
+        });
+    }
+
+    function searchGrid() {
+        $('#gridTable').ysTable('search');
+        resetToolbarStatus();
+    }
+
+    function syncDatabase() {
+        ys.ajax({
+            url: '@Url.Content("~/SystemManage/Database/SyncDatabaseJson")',
+            type: "post",
+            success: function (obj) {
+                if (obj.Tag == 1) {
+                    ys.msgSuccess('同步完成');
+                }
+                else {
+                    ys.msgError(obj.Message);
+                }
+            }
+        });
+    }
+</script>

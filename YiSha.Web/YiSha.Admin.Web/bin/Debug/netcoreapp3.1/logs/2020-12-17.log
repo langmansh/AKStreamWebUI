@@ -1,0 +1,169 @@
+2020-12-17 21:56:45.7375||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-17 21:56:49.6681|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {e3757faa-d41a-4023-8740-570e74b6e294} may be persisted to storage in unencrypted form. |url: |action: 
+2020-12-17 21:56:53.9437||ERROR||Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 223
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 232
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-17 21:56:59.5798||ERROR||'GBK' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 223
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-17 21:59:52.7572||ERROR||Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 223
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 232
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](IQueryable`1 tempData, String sort, Boolean isAsc, Int32 pageSize, Int32 pageIndex) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 358
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition, String sort, Boolean isAsc, Int32 pageSize, Int32 pageIndex) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 325
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 163
+   at YiSha.Service.SystemManage.DataDictDetailService.GetPageList(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 28
+   at YiSha.Business.SystemManage.DataDictDetailBLL.GetPageList(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictDetailBLL.cs:line 34
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictDetailController.GetPageListJson(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictDetailController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDictDetail/GetPageListJson|action: GetPageListJson
+2020-12-17 22:00:10.9033||ERROR||Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 223
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 232
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](IQueryable`1 tempData, String sort, Boolean isAsc, Int32 pageSize, Int32 pageIndex) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 358
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition, String sort, Boolean isAsc, Int32 pageSize, Int32 pageIndex) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 325
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 163
+   at YiSha.Service.SystemManage.DataDictDetailService.GetPageList(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 28
+   at YiSha.Business.SystemManage.DataDictDetailBLL.GetPageList(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictDetailBLL.cs:line 34
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictDetailController.GetPageListJson(DataDictDetailListParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictDetailController.cs:line 48
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDictDetail/GetPageListJson|action: GetPageListJson
+2020-12-17 22:05:23.0301||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-17 22:05:27.8578||ERROR||Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 223
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 232
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-17 22:12:06.9836||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-17 22:12:12.0101||ERROR||Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 223
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 232
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-17 22:13:10.6743||ERROR||Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 223
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 232
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-17 22:13:15.6780||ERROR||Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at MySqlConnector.Core.Row.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\Core\Row.cs:line 223
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 ordinal) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 232
+   at lambda_method(Closure , QueryContext , DbDataReader , ResultContext , Int32[] , ResultCoordinator )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at YiSha.Data.EF.MySqlDatabase.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.EF\Database\MySqlDatabase.cs:line 303
+   at YiSha.Data.Repository.Repository.FindList[T](Expression`1 condition) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Data\YiSha.Data.Repository\Repository.cs:line 144
+   at YiSha.Service.SystemManage.DataDictDetailService.GetList(DataDictDetailListParam param) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Service\SystemManage\DataDictDetailService.cs:line 21
+   at YiSha.Business.Cache.DataDictDetailCache.GetList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business.Cache\DataDictDetailCache.cs:line 23
+   at YiSha.Business.SystemManage.DataDictBLL.GetDataDictList() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Business\YiSha.Business\SystemManage\DataDictBLL.cs:line 67
+   at YiSha.Admin.Web.Areas.SystemManage.Controllers.DataDictController.GetDataDictListJson() in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\SystemManage\Controllers\DataDictController.cs:line 71
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/SystemManage/DataDict/GetDataDictListJson|action: GetDataDictListJson
+2020-12-17 22:13:18.8836||ERROR||'GBK' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 223
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson

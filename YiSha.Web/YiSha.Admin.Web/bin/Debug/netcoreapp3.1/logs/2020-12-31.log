@@ -1,0 +1,164 @@
+2020-12-31 15:01:26.2279||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-31 15:02:35.3198||ERROR||Error converting value {null} to type 'System.Boolean'. Path '[0].config.api_ApiDebug', line 1, position 4138.
+Null object cannot be converted to a value type.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.MediaManagerController.MediaServerList(MediaManagerParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\MediaManagerController.cs:line 47
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/MediaManager/MediaServerList|action: MediaServerList
+2020-12-31 15:02:37.4258||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-31 15:03:41.9258||ERROR||Error converting value {null} to type 'System.Boolean'. Path '[0].config.api_ApiDebug', line 1, position 4138.
+Null object cannot be converted to a value type.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.MediaManagerController.MediaServerList(MediaManagerParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\MediaManagerController.cs:line 47
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/MediaManager/MediaServerList|action: MediaServerList
+2020-12-31 15:03:56.9294||ERROR||Error converting value {null} to type 'System.Boolean'. Path '[0].config.api_ApiDebug', line 1, position 4138.
+Null object cannot be converted to a value type.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.MediaManagerController.MediaServerList(MediaManagerParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\MediaManagerController.cs:line 47
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/MediaManager/MediaServerList|action: MediaServerList
+2020-12-31 15:07:34.3637||ERROR||Error converting value {null} to type 'System.Boolean'. Path '[0].config.api_ApiDebug', line 1, position 4137.
+Null object cannot be converted to a value type.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at YiSha.Admin.Web.Areas.CameraManage.Controllers.MediaManagerController.MediaServerList(MediaManagerParam param, Pagination pagination) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\Areas\CameraManage\Controllers\MediaManagerController.cs:line 47
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+ |url: http://localhost/CameraManage/MediaManager/MediaServerList|action: MediaServerList
+2020-12-31 15:12:00.6331||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-31 15:12:16.5366||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-31 15:44:25.8215||DEBUG||程序启动 |ContentRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web |WebRootPath:E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Web\YiSha.Admin.Web\wwwroot |IsDevelopment:True |url: |action: 
+2020-12-31 15:44:42.0088||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-31 15:46:52.1578||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson
+2020-12-31 15:49:15.1473||ERROR||'gbk' is not a supported encoding name. For information on defining a custom encoding, see the documentation for the Encoding.RegisterProvider method. (Parameter 'name')
+   at System.Text.EncodingTable.InternalGetCodePageFromName(String name)
+   at System.Text.EncodingTable.GetCodePageFromName(String name)
+   at System.Text.Encoding.GetEncoding(String name)
+   at YiSha.Util.HttpHelper.GetHttpRequestData(HttpItem objhttpitem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 213
+   at YiSha.Util.HttpHelper.GetHtml(HttpItem httpItem) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\HttpHelper.cs:line 463
+   at YiSha.Util.IpLocationHelper.GetIpLocationFromPCOnline(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 54
+   at YiSha.Util.IpLocationHelper.GetIpLocation(String ipAddress) in E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Util\YiSha.Util\IpLocationHelper.cs:line 22
+ |url: http://localhost/ToolManage/Server/GetServerIpJson|action: GetServerIpJson

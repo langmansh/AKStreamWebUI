@@ -1,0 +1,9 @@
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\bin\Release\netcoreapp3.1\YiSha.Cache.Interface.deps.json
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\bin\Release\netcoreapp3.1\YiSha.Cache.Interface.dll
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\bin\Release\netcoreapp3.1\YiSha.Cache.Interface.pdb
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\obj\Release\netcoreapp3.1\YiSha.Cache.Interface.csprojAssemblyReference.cache
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\obj\Release\netcoreapp3.1\YiSha.Cache.Interface.AssemblyInfoInputs.cache
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\obj\Release\netcoreapp3.1\YiSha.Cache.Interface.AssemblyInfo.cs
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\obj\Release\netcoreapp3.1\YiSha.Cache.Interface.csproj.CoreCompileInputs.cache
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\obj\Release\netcoreapp3.1\YiSha.Cache.Interface.dll
+E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Cache\YiSha.Cache.Interface\obj\Release\netcoreapp3.1\YiSha.Cache.Interface.pdb

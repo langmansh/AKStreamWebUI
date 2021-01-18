@@ -1,0 +1,216 @@
+﻿@{
+    Layout = "~/Views/Shared/_Index.cshtml";
+ }
+<div class="container-div">
+    <div class="row">
+        <div id="searchDiv" class="col-sm-12 search-collapse">
+            <div class="select-list">
+                <ul>
+                    <li>
+                        设备ID：<input id="mainId" col="MainId" type="text" />
+                    </li>
+                    <li>
+                        <a id="btnSearch" class="btn btn-primary btn-sm" onclick="searchGrid()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-group-sm hidden-xs" id="toolbar">
+            <a id="btnAdd" class="btn btn-success" onclick="showSaveForm(true)"><i class="fa fa-plus"></i> 新增</a>
+            <a id="btnEdit" class="btn btn-primary disabled" onclick="showSaveForm(false)"><i class="fa fa-edit"></i> 修改</a>
+            <a id="btnDelete" class="btn btn-danger disabled" onclick="deleteForm()"><i class="fa fa-remove"></i> 删除</a>
+            <a id="btnPlay" class="btn btn-info" onclick="Play()"><i class="fa fa-file-video-o"></i> 预览设备</a>
+            <a id="btnActived" class="btn btn-info" onclick="DeviceActived()"><i class="fa fa-sign-in"></i> 激活设备</a>
+        </div>
+        <div class="col-sm-12 select-table table-striped">
+            <table id="gridTable" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        initGrid();
+    });
+
+    function initGrid() {
+        var queryUrl = '@Url.Content("~/CameraManage/VideoChannels/GetPageListJson")';
+        $('#gridTable').ysTable({
+            url: queryUrl,
+            columns: [
+                { checkbox: true, visible: true },
+                { field: 'Id', title: 'Id', visible: false },
+                { field: 'MainId', title: '设备ID' },
+                { field: 'MediaServerId', title: '流媒体' },
+                { field: 'Vhost', title: 'Vhost', visible: false },
+                { field: 'App', title: 'App', visible: false },
+                { field: 'ChannelName', title: '通道名称' },
+                { field: 'DepartmentId', title: '部门代码', visible: false },
+                { field: 'DepartmentName', title: '部门名称', visible: false },
+                { field: 'PDepartmentId', title: '上级部门代码', visible: false},
+                { field: 'PDepartmentName', title: '上级部门名称', visible: false },
+                { field: 'DeviceNetworkType', title: '网络类型' },
+                { field: 'DeviceStreamType', title: '流类型' },
+                { field: 'MethodByGetStream', title: '拉取非rtp设备的流' },
+                { field: 'VideoDeviceType', title: '设备类型' },
+                {
+                    field: 'AutoVideo', title: '自动推拉流', formatter: function (value, row, index) {
+                        if (row.AutoVideo == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'AutoRecord', title: '自动录制计划', formatter: function (value, row, index) {
+                        if (row.AutoRecord == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                { field: 'RecordPlanName', title: '录制计划模板名称' },
+                { field: 'IpV4Address', title: 'ipv4地址' },
+                { field: 'IpV6Address', title: 'ipv6地址' },
+                {
+                    field: 'HasPtz', title: '云台控制', formatter: function (value, row, index) {
+                        if (row.HasPtz == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                { field: 'DeviceId', title: 'Device ID' },
+                { field: 'ChannelId', title: 'Channel ID' },
+                {
+                    field: 'RtpWithTcp', title: 'Tcp推流', formatter: function (value, row, index) {
+                        if (row.RtpWithTcp == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                { field: 'VideoSrcUrl', title: '视频流源地址' },
+                {
+                    field: 'DefaultRtpPort', title: '默认rtp端口', formatter: function (value, row, index) {
+                        if (row.DefaultRtpPort == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'Enabled', title: '是否启用', formatter: function (value, row, index) {
+                        if (row.Enabled == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+                {
+                    field: 'NoPlayerBreak', title: '无人断流', formatter: function (value, row, index) {
+                        if (row.NoPlayerBreak == true) {
+                            return '<span class="badge badge-primary">' + "启用" + '</span>';
+                        } else {
+                            return '<span class="badge badge-error">' + "禁用" + '</span>';
+                        }
+                    }
+                },
+            ],
+            queryParams: function (params) {
+                var pagination = $('#gridTable').ysTable('getPagination', params);
+                var queryString = $('#searchDiv').getWebControls(pagination);
+                return queryString;
+            }
+        });
+    }
+
+    function searchGrid() {
+        $('#gridTable').ysTable('search');
+        resetToolbarStatus();
+    }
+
+    function showSaveForm(bAdd) {
+        var id = 0;
+        if (!bAdd) {
+            var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+            if (!ys.checkRowEdit(selectedRow)) {
+                return;
+            }
+            else {
+                id = selectedRow[0].Id;
+            }
+        }
+        ys.openDialog({
+            title: id > 0 ? '编辑' : '添加',
+            content: '@Url.Content("~/CameraManage/VideoChannels/VideoChannelsForm")' + '?id=' + id,
+            width: '1000px',
+            height: '700px',
+            callback: function (index, layero) {
+                var iframeWin = window[layero.find('iframe')[0]['name']];
+                iframeWin.saveForm(index);
+            }
+        });
+    }
+
+    function deleteForm() {
+        var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+        if (ys.checkRowDelete(selectedRow)) {
+            ys.confirm('确认要删除选中的' + selectedRow.length + '条数据吗？', function () {
+                var ids = ys.getIds(selectedRow);
+                ys.ajax({
+                    url: '@Url.Content("~/CameraManage/VideoChannels/DeleteFormJson")' + '?ids=' + ids,
+                    type: 'post',
+                    success: function (obj) {
+                        if (obj.Tag == 1) {
+                            ys.msgSuccess(obj.Message);
+                            searchGrid();
+                        }
+                        else {
+                            ys.msgError(obj.Message);
+                        }
+                    }
+                });
+            });
+        }
+    }
+
+    //预览设备
+    function Play() {
+        var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+        if (ys.checkRowEdit(selectedRow)) {
+                    ys.openDialog({
+                    title: '视频预览',
+                    content: '@Url.Content("~/CameraManage/VideoChannels/LiveVideo")' + '?MediaServerId=' + selectedRow[0]["MediaServerId"] + '&MainId=' + selectedRow[0]["MainId"],
+                    width: '950px',
+                    height: '600px',
+                    callback: function (index, layero) {
+
+                    }
+                });
+        }
+    }
+    //激活设备
+    function DeviceActived() {
+        var selectedRow = $('#gridTable').bootstrapTable('getSelections');
+        var id = selectedRow[0].Id;
+        if (ys.checkRowEdit(selectedRow)) {
+                    ys.openDialog({
+                    title: '设备激活',
+                    content: '@Url.Content("~/CameraManage/VideoChannels/DeviceActived")' + '?id=' + id,
+                    width: '950px',
+                    height: '800px',
+                    callback: function (index, layero) {
+                        var iframeWin = window[layero.find('iframe')[0]['name']];
+                        iframeWin.saveForm(index);
+                    }
+                });
+        }
+    }
+</script>

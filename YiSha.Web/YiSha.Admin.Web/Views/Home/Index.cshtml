@@ -1,0 +1,206 @@
+﻿@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment HostingEnvironment
+@{
+    ViewBag.Title = "AKStreamWebUI";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    OperatorInfo operatorInfo = ViewBag.OperatorInfo;
+    String portrait = operatorInfo.Portrait;
+    if (portrait == null || string.IsNullOrEmpty(portrait))
+    {
+        portrait = Url.Content("~/image/portrait.png");
+    }
+    else
+    {
+        portrait = GlobalContext.SystemConfig.ApiSite + portrait;
+    }
+}
+@BundlerHelper.Render(HostingEnvironment.ContentRootPath, Url.Content("~/yisha/js/yisha-data.min.js"))
+
+<div id="wrapper">
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="nav-close">
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="logo">AKStreamWebUI</li>
+                <li class="nav-header">
+                    <div class="dropdown profile-element clear">
+                        <div class="image-left">
+                            <img alt="image" src='@portrait' class="img-circle" height="50" width="50" />
+                        </div>
+                        <div class="image-right">
+                            <span class="block m-t-xs">@operatorInfo.UserName</span>
+                            <span class="text-xs block">@operatorInfo.DepartmentName</span>
+                        </div>
+                    </div>
+                </li>
+                @{
+                    List<MenuEntity> menuList = ViewBag.MenuList;
+                    foreach (MenuEntity menu in menuList.Where(p => p.ParentId == 0).OrderBy(p => p.MenuSort))
+                    {
+                        <li data-type="menu">
+                            @{
+                                if (HttpHelper.IsUrl(menu.MenuUrl))
+                                {
+                                    <a class="menuItem" href="@menu.MenuUrl">
+                                        <i class="@menu.MenuIcon"></i>
+                                        <span class="nav-label">@menu.MenuName</span>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a href="#">
+                                        <i class="@menu.MenuIcon"></i>
+                                        <span class="nav-label">@menu.MenuName</span>
+                                        <span class="fa arrow"></span>
+                                    </a>
+                                }
+                            }
+                            <ul class="nav nav-second-level collapse" data-type="menu">
+                                @foreach (MenuEntity secondMenu in menuList.Where(p => p.ParentId == menu.Id).OrderBy(p => p.MenuSort))
+                                {
+                                    <li data-type="menu">
+                                        @{
+                                            if (menuList.Where(p => p.ParentId == secondMenu.Id && p.MenuType != (int)MenuTypeEnum.Button).Count() == 0)
+                                            {
+                                                if (HttpHelper.IsUrl(secondMenu.MenuUrl))
+                                                {
+                                                    <a class="menuItem" href='@secondMenu.MenuUrl'>@secondMenu.MenuName</a>
+                                                }
+                                                else
+                                                {
+                                                    <a class="menuItem" href="#" data-url='@Url.Content("~/" + secondMenu.MenuUrl)'>@secondMenu.MenuName</a>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <a href="#">@secondMenu.MenuName<span class="fa arrow"></span></a>
+                                                <ul class="nav nav-third-level" data-type="menu">
+                                                    @foreach (MenuEntity thirdMenu in menuList.Where(p => p.ParentId == secondMenu.Id).OrderBy(p => p.MenuSort))
+                                                    {
+                                                        <li data-type="menu">
+                                                            <a class="menuItem" href="#" data-url='@Url.Content("~/" + thirdMenu.MenuUrl)'>@thirdMenu.MenuName</a>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            }
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </nav>
+    <!--左侧导航结束-->
+    <!--右侧部分开始-->
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                <a class="navbar-minimalize minimalize-styl-2" href="#" title="收起菜单">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul class="nav navbar-top-links navbar-right welcome-message">
+                    <li><a id="fullScreen"><i class="fa fa-arrows-alt"></i>全屏</a></li>
+                    <li class="dropdown user-menu">
+                        <a href="javascript:void(0)" class="dropdown-toggle" data-hover="dropdown">
+                            <img src="@portrait" class="user-image">
+                            <span class="hidden-xs">@operatorInfo.RealName</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="mt5">
+                                <a class="menuItem" href="#" data-url='@Url.Content("~/OrganizationManage/User/UserDetail")?id=@operatorInfo.UserId'>
+                                    <i class="fa fa-user"></i> 个人中心
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="showChangePasswordForm()">
+                                    <i class="fa fa-key"></i> 修改密码
+                                </a>
+                            </li>
+                            <li>
+                                <a onclick="showSwitchSkinForm()">
+                                    <i class="fa fa-dashboard"></i> 切换主题
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="@Url.Content("~/Home/LoginOff")">
+                                    <i class="fa fa-sign-out"></i> 退出登录
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row content-tabs">
+            <button class="roll-nav roll-left tabLeft">
+                <i class="fa fa-backward"></i>
+            </button>
+            <nav class="page-tabs menuTabs">
+                <div class="page-tabs-content">
+                    <a href="javascript:;" class="active menuTab" data-id="/system/main">首页</a>
+                </div>
+            </nav>
+            <button class="roll-nav roll-right tabRight">
+                <i class="fa fa-forward"></i>
+            </button>
+            <div class="btn-group roll-nav roll-right">
+                <button class="dropdown J_tabClose" data-toggle="dropdown">
+                    页签操作<span class="caret"></span>
+                </button>
+                <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                    <li><a class="tabCloseCurrent" href="#">关闭当前</a></li>
+                    <li><a class="tabCloseOther" href="#">关闭其他</a></li>
+                    <li><a class="tabCloseAll" href="#">全部关闭</a></li>
+                </ul>
+            </div>
+            <a href="#" class="roll-nav roll-right tabReload"><i class="fa fa-refresh"></i> 刷新</a>
+        </div>
+        <div class="row mainContent" id="content-main">
+            <iframe class="YiSha_iframe" name="iframe0" width="100%" height="100%" data-id="/system/main" src="@Url.Content("~/ToolManage/Server/ServerIndex")" frameborder="0" seamless></iframe>
+        </div>
+    </div>
+    <!--右侧部分结束-->
+</div>
+
+<script type="text/javascript">
+    if (!ys.isNullOrEmpty($.cookie('Skin'))) {
+        var skin = decodeURIComponent($.cookie('Skin'));
+        $("body").addClass(skin.split('|')[0]);
+        $("body").addClass(skin.split('|')[1]);
+    } else {
+        var sideTheme = "theme-dark";
+        var skinName = "skin-blue";
+        $("body").addClass(sideTheme);
+        $("body").addClass(skinName);
+    }
+
+    function showChangePasswordForm() {
+        ys.openDialog({
+            title: "修改密码",
+            content: '@Url.Content("~/OrganizationManage/User/ChangePassword")' + '?id=@operatorInfo.UserId',
+            height: "500px",
+            callback: function (index, layero) {
+                var iframeWin = window[layero.find('iframe')[0]['name']];
+                iframeWin.saveForm(index);
+            }
+        });
+    }
+
+    function showSwitchSkinForm() {
+        ys.openDialog({
+            title: "切换主题",
+            content: '@Url.Content("~/Home/Skin")',
+            width: '530px',
+            height: '390px',
+            btn: null,
+            maxmin: false
+        });
+    }
+</script>

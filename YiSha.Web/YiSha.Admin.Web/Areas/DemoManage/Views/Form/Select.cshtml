@@ -1,0 +1,135 @@
+﻿@{
+    Layout = "~/Views/Shared/_FormGray.cshtml";
+}
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>下拉框 <small>https://github.com/select2/select2</small></h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="form-group">
+                        <label class="font-noraml">单选</label>
+                        <select class="form-control select2">
+                            <option value="">--请选择开发语言--</option>
+                            <option value=".Net">.Net</option>
+                            <option value="Java">Java</option>
+                            <option value="Php">Php</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-noraml">单选 (ysComboBox)</label>
+                        <div id="select-demo-1">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-noraml">分组单选</label>
+                        <select class="form-control select2">
+                            <option value="">请选择开发语言</option>
+                            <option value=".Net">.Net</option>
+                            <option value="Java">Java</option>
+                            <option value="Php">Php</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-noraml">分组单选 (ysComboBox)</label>
+                        <div id="select-demo-2">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-noraml">多选</label>
+                        <select class="form-control select2" multiple>
+                            <option value=".Net">.Net</option>
+                            <option value="Java">Java</option>
+                            <option value="Php">Php</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-noraml">多选 (ysComboBox)</label>
+                        <div id="select-demo-3">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-noraml">分组多选</label>
+                        <select class="form-control select2" multiple>
+                            <optgroup label="--请选择开发语言--">
+                                <option value=".Net">.Net</option>
+                                <option value="Java">Java</option>
+                                <option value="Php">Php</option>
+                            </optgroup>
+                            <optgroup label="--请选择数据库--">
+                                <option value="Oracle">Oracle</option>
+                                <option value="Mysql">Mysql</option>
+                                <option value="Sysbase">Sysbase</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-noraml">分组多选 (ysComboBox)</label>
+                        <div id="select-demo-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        var data = [
+            { 'Key': '.Net', 'Value': '.Net' },
+            { 'Key': 'Java', 'Value': 'Java' },
+            { 'Key': 'Php', 'Value': 'Php' }
+        ];
+        var groupData = [
+            {
+                'Key': '请选择开发语言',
+                'Value': [
+                    { 'Key': '.Net', 'Value': '.Net' },
+                    { 'Key': 'Java', 'Value': 'Java' },
+                    { 'Key': 'Php', 'Value': 'Php' }
+                ]
+            },
+            {
+                'Key': '请选择数据库',
+                'Value': [
+                    { 'Key': 'MySql', 'Value': 'MySql' },
+                    { 'Key': 'SqlServer', 'Value': 'SqlServer' },
+                    { 'Key': 'Oracle', 'Value': 'Oracle' }
+                ]
+            }
+        ];
+
+        $("#select-demo-1").ysComboBox({
+            data: data,
+            class: "form-control"
+        });
+
+        $("#select-demo-2").ysComboBox({
+            data: groupData,
+            class: "form-control"
+        });
+
+        $("#select-demo-3").ysComboBox({
+            data: data,
+            class: "form-control",
+            multiple: true
+        });
+
+        $("#select-demo-4").ysComboBox({
+            data: groupData,
+            class: "form-control",
+            multiple: true
+        });
+    });
+</script>

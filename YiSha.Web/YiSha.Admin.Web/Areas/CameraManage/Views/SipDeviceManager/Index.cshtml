@@ -1,0 +1,133 @@
+﻿@{
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment HostingEnvironment
+@section header{
+    @BundlerHelper.Render(HostingEnvironment.ContentRootPath, Url.Content("~/lib/zTree/v3/css/metroStyle/metroStyle.min.css"))
+    @BundlerHelper.Render(HostingEnvironment.ContentRootPath, Url.Content("~/lib/zTree/v3/js/ztree.min.js"))
+
+    @BundlerHelper.Render(HostingEnvironment.ContentRootPath, Url.Content("~/lib/jquery.layout/1.4.4/jquery.layout-latest.min.css"))
+    @BundlerHelper.Render(HostingEnvironment.ContentRootPath, Url.Content("~/lib/jquery.layout/1.4.4/jquery.layout-latest.min.js"))
+}
+
+<div class="ui-layout-west">
+    <div class="main-content">
+        <div class="box box-main">
+            <div class="box-header">
+                <div class="box-title">
+                    Sip设备列表
+                </div>
+                <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" id="btnRefresh" title="刷新部门"><i class="fa fa-refresh"></i></button>
+                </div>
+            </div>
+            <div class="ui-layout-content">
+                <div id="departmentTree" class="ztree"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-div ui-layout-center">
+    <div class="row">
+        <div id="searchDiv" class="col-sm-12 search-collapse">
+            <input type="hidden" id="sipdeviceId" col="parentID">
+            <div class="select-list">
+                <ul>
+                    <li>
+                        Channel ID：<input id="channelId" col="deviceID" type="text" />
+                    </li>
+                    <li>
+                        推流状态：<span id="sipcameraStatus" col="sipCameraStatus"></span>
+                    </li>
+                    <li>
+                        <a id="btnSearch" class="btn btn-primary btn-sm" onclick="searchGrid()"><i class="fa fa-search"></i>&nbsp;搜索</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="toolbar" class="btn-group-sm">
+
+        </div>
+
+        <div class="col-sm-12 select-table table-striped">
+            <table id="gridTable" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#sipcameraStatus").ysComboBox({ data: ys.getJson(@Html.Raw(typeof(IsEnum).EnumToDictionaryString())) });
+
+        initGrid();
+        initTree();
+
+        $('body').layout({ west__size: 185 });
+
+        $('#btnRefresh').click(function () {
+            initTree();
+        });
+    });
+
+    function initTree() {
+        $('#departmentTree').ysTree({
+            url: '@Url.Content("~/CameraManage/SipDeviceManager/SipDeviceList")',
+            async: true,
+            expandLevel: 1,
+            maxHeight: "700px",
+            callback: {
+                onClick: function (event, treeId, treeNode) {
+                    console.log(treeNode.name)
+                    $("#sipdeviceId").val(treeNode.name);
+                    searchGrid();
+                }
+            }
+        });
+    }
+
+    function initGrid() {
+        var queryUrl = '@Url.Content("~/CameraManage/SipDeviceManager/SipDeviceDetailList")';
+        $('#gridTable').ysTable({
+            url: queryUrl,
+            columns: [
+                { checkbox: false, visible: false },
+                {
+                    field: 'sipCameraStatus', title: '设备状态', sortable: true, formatter: function (value, row, index) {
+                        if (value == "RealVideo") {
+                            return '<span class="badge badge-primary">推流</span>';
+                        } else {
+                            return '<span class="badge badge-warning">断流</span>';
+                        }
+                    }
+                },
+                { field: 'mediaServerId', title: '流媒体服务', sortable: false },
+                { field: 'pushStreamSocketType', title: '推流连接类型', sortable: false },
+                { field: 'streamServerIp', title: '流服务IP', sortable: false },
+                { field: 'streamServerPort', title: '流服务端口', sortable: false },
+                { field: 'deviceID', title: 'Channel ID', sortable: false },
+                { field: 'parentID', title: 'Sip Device ID', sortable: false },
+                { field: 'ipAddress', title: 'IP地址', sortable: false },
+                { field: 'port', title: '端口', sortable: false },
+                { field: 'ctype', title: '通道类型', sortable: false },
+                { field: 'name', title: '设备名称', sortable: false },
+                { field: 'manufacturer', title: '所属厂商', sortable: false },
+                { field: 'model', title: '设备型号', sortable: false },
+                { field: 'owner', title: '所属者', sortable: false }
+            ],
+            queryParams: function (params) {
+                var pagination = $('#gridTable').ysTable('getPagination', params);
+                var queryString = $("#searchDiv").getWebControls(pagination);
+                return queryString;
+            }
+        });
+    }
+
+    function searchGrid() {
+        $('#gridTable').ysTable('search');
+        resetToolbarStatus();
+    }
+
+
+</script>
