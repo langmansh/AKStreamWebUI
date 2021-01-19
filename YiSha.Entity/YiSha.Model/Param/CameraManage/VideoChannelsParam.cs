@@ -12,5 +12,6 @@ namespace YiSha.Model.Param.CameraManage
     /// </summary>
     public class VideoChannelsListParam
     {
+        public string MainId { get; set; }
     }
 }

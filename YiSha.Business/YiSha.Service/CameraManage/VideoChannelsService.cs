@@ -37,6 +37,13 @@ namespace YiSha.Service.CameraManage
             return list.ToList();
         }
 
+        public async Task<List<VideoChannelsEntity>> GetBackPageListJson(VideoChannelsListParam param, Pagination pagination)
+        {
+            var expression = ListFilter(param);
+            var list = await this.BaseRepository().FindList(expression, pagination);
+            return list.ToList();
+        }
+
         public async Task<VideoChannelsEntity> GetEntity(long id)
         {
             return await this.BaseRepository().FindEntity<VideoChannelsEntity>(id);
@@ -71,6 +78,10 @@ namespace YiSha.Service.CameraManage
             var expression = LinqExtensions.True<VideoChannelsEntity>();
             if (param != null)
             {
+                if (!string.IsNullOrEmpty(param.MainId))
+                {
+                    expression = expression.And(t => t.MainId.Contains(param.MainId));
+                }
             }
             return expression;
         }

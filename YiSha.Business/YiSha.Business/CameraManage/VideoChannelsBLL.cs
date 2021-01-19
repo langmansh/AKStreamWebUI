@@ -39,6 +39,16 @@ namespace YiSha.Business.CameraManage
             return obj;
         }
 
+        public async Task<TData<List<VideoChannelsEntity>>> GetBackPageListJson(VideoChannelsListParam param, Pagination pagination)
+        {
+            TData<List<VideoChannelsEntity>> obj = new TData<List<VideoChannelsEntity>>();
+            obj.Data = await videoChannelsService.GetBackPageListJson(param, pagination);
+            obj.Data = obj.Data.Where(x => x.Enabled.Equals(true) && x.MediaServerId.Contains("unknown_server")==false).ToList();
+            obj.Total = pagination.TotalCount;
+            obj.Tag = 1;
+            return obj;
+        }
+
         public async Task<TData<VideoChannelsEntity>> GetEntity(long id)
         {
             TData<VideoChannelsEntity> obj = new TData<VideoChannelsEntity>();

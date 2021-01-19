@@ -8,25 +8,50 @@
 <script type="text/javascript">
     var mediaId = ys.request("MediaServerId");
     var mainId = ys.request("MainId");
+    var taskId = ys.request("taskId");
+    var ssrcId = ys.request("ssrcId");
+    var Tpye = ys.request("Record");
     $(function () {
-        ys.ajax({
-            url: '@Url.Content("~/CameraManage/VideoChannels/LiveVideoPlay")' + '?MediaServerId=' + mediaId + '&MainId=' + mainId,
-            type: "get",
-            success: function (obj) {
-                console.log(obj)
-                var res = JSON.parse(obj);
-                if (res.playUrl.length > 0) {
-                    // 实例化播放器
-                    var Player = new WasmPlayer(null, 'newplay', callbackFun, { cbUserPtr: this, decodeType: "auto", BigPlay: false, Height: true });
-                    // 调用播放
-                    Player.play(res.playUrl[0], 1);
+        if (Tpye != "Record") {
+            ys.ajax({
+                url: '@Url.Content("~/CameraManage/VideoChannels/LiveVideoPlay")' + '?MediaServerId=' + mediaId + '&MainId=' + mainId,
+                type: "get",
+                success: function (obj) {
+                    console.log(obj)
+                    var res = JSON.parse(obj);
+                    if (res.playUrl.length > 0) {
+                        // 实例化播放器
+                        var Player = new WasmPlayer(null, 'newplay', callbackFun, { cbUserPtr: this, decodeType: "auto", BigPlay: false, Height: true });
+                        // 调用播放
+                        Player.play(res.playUrl[0], 1);
+                    }
+                    else {
+                        console.log(obj);
+                        ys.msgError(obj);
+                    }
                 }
-                else {
-                    console.log(obj);
-                    ys.msgError(obj);
+            });
+        }
+        else {
+             ys.ajax({
+                 url: '@Url.Content("~/CameraManage/VideoChannels/LiveVideoPlay")' + '?taskId=' + taskId + '&ssrcId=' + ssrcId + '&Type=Record',
+                type: "get",
+                success: function (obj) {
+                    console.log(obj)
+                    var res = JSON.parse(obj);
+                    if (res.playUrl.length > 0) {
+                        // 实例化播放器
+                        var Player = new WasmPlayer(null, 'newplay', callbackFun, { cbUserPtr: this, decodeType: "auto", BigPlay: false, Height: true });
+                        // 调用播放
+                        Player.play(res.playUrl[0], 1);
+                    }
+                    else {
+                        console.log(obj);
+                        ys.msgError(obj);
+                    }
                 }
-            }
-        });
+            });
+        }
     });
 
     function callbackFun(e) {

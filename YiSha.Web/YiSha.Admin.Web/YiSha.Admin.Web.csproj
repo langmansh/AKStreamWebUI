@@ -10,6 +10,7 @@
     <Copyright>YiShaAdmin</Copyright>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
     <UserSecretsId>4f047dac-7a07-4019-a856-8d4fba019461</UserSecretsId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
