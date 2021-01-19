@@ -1,5 +1,7 @@
 # AKStreamWebUI
 ###### 基于AKStream流媒体管理控制接口的前端界面。
+###### 流媒体服务采用了ZLMediaKit：https://github.com/xia-chu/ZLMediaKit
+###### 接口服务采用了AKStream：https://github.com/chatop2020/AKStream
 
 #### 已经实现了AKStream接口功能如下：
 ###### 1.设备列表（可查看通过SIP自动添加的设备列表信息）。
