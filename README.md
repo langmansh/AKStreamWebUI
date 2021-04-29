@@ -1,3 +1,7 @@
+### 本项目在Gitee地址
+如果发现这边没有更新，请移步至Gitee更新
+https://gitee.com/sscboshi/AKStreamWebUI
+
 ### AKStreamWebUI
 - 基于AKStream流媒体管理控制接口的Web管理端。
 - 流媒体服务采用 ZLMediaKit：https://github.com/xia-chu/ZLMediaKit
