@@ -976,3 +976,5 @@ E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\obj\Debug\netcor
 E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\obj\Debug\netcoreapp3.1\YiSha.Admin.Web.dll
 E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\obj\Debug\netcoreapp3.1\YiSha.Admin.Web.pdb
 E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\obj\Debug\netcoreapp3.1\YiSha.Admin.Web.genruntimeconfig.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\obj\Debug\netcoreapp3.1\Razor\Areas\CameraManage\Views\VideoChannels\BackVideo.cshtml.g.cs
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Web\YiSha.Admin.Web\obj\Debug\netcoreapp3.1\Razor\Areas\CameraManage\Views\VideoChannels\BackVideoChannelsIndex.cshtml.g.cs

@@ -6,3 +6,12 @@ E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.csproj.CoreCompileInputs.cache
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.dll
 E:\源码\YiShaAdmin\YiShaAdmin\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\bin\Debug\netcoreapp3.1\YiSha.Enum.deps.json
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\bin\Debug\netcoreapp3.1\YiSha.Enum.dll
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\bin\Debug\netcoreapp3.1\YiSha.Enum.pdb
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.csprojAssemblyReference.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.AssemblyInfoInputs.cache
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.AssemblyInfo.cs
+E:\源码\AKStreamWebUI\AKStreamWebUI\YiSha.Entity\YiSha.Enum\obj\Debug\netcoreapp3.1\YiSha.Enum.csproj.CoreCompileInputs.cache
